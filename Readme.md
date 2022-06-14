@@ -8,6 +8,9 @@ Includes:
 - [ ] Nested menus
 - [ ] Context grid (image/icon)
 
+## Demo
+Basic: https://repalash.com/simple-context-menus-js/
+
 ## Used By
 
 * WebGi: [https://webgi.xyz/](https://webgi.xyz/)

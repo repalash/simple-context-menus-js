@@ -7,7 +7,7 @@
 </head>
 
 <body>
-	<button id="simpleContextMenu">Simple Context Menu</button>
+	<button id="simpleContextMenuButton">Simple Context Menu</button>
 	<script type="importmap">
 			{
 				"imports": {
@@ -19,7 +19,7 @@
 	<script type="module">
 		import {SimpleContextMenu} from "simple-context-menu-js";
 
-		document.getElementById('simpleContextMenu').onclick = (ev)=>{
+		document.getElementById('simpleContextMenuButton').onclick = (ev)=>{
 			const rect = ev.target.getBoundingClientRect()
 			const menu = SimpleContextMenu.Create({
 				'Option 1': (ev)=>{
@@ -27,6 +27,10 @@
 				},
 				'Option 2': (ev)=>{
 					console.log(ev)
+				},
+				'Close': (ev)=>{
+					console.log(ev)
+					SimpleContextMenu.Remove()
 				}
 			}, rect.x , rect.y + rect.height + 5)
 			document.body.appendChild(menu)
