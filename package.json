@@ -1,7 +1,7 @@
 {
   "name": "simple-context-menus-js",
   "version": "0.0.1",
-  "description": "JavaScript and TypeScript example starter project",
+  "description": "Simple native styled custom context menus for use in browsers",
   "source": "src/index.ts",
   "main": "dist/main.js",
   "types": "dist/types.d.ts",
