@@ -1,0 +1,40 @@
+{
+  "name": "simple-context-menus-js",
+  "version": "0.0.1",
+  "description": "JavaScript and TypeScript example starter project",
+  "source": "src/index.ts",
+  "main": "dist/main.js",
+  "types": "dist/types.d.ts",
+  "module": "dist/module.js",
+  "scripts": {
+    "dev": "parcel watch",
+    "build": "parcel build",
+    "lint": "eslint . --fix"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Palash Bansal",
+    "email": "palash@shaders.app",
+    "url": "https://github.com/repalash"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/packager-ts": "^2.5.0",
+    "@parcel/transformer-typescript-types": "^2.5.0",
+    "@typescript-eslint/eslint-plugin": "^5.18.0",
+    "@typescript-eslint/parser": "^5.18.0",
+    "eslint": "^8.13.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "parcel": "^2.5.0",
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.3"
+  },
+  "volta": {
+    "node": "16.14.2",
+    "npm": "7.24.2"
+  },
+  "jest": {
+    "preset": "ts-jest"
+  }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Simple Context Menus</title>
+	<meta charset="UTF-8" />
+</head>
+
+<body>
+	<button id="simpleContextMenu">Simple Context Menu</button>
+	<script type="importmap">
+			{
+				"imports": {
+					"simple-context-menu-js": "./dist/module.js"
+				}
+			}
+	</script>
+
+	<script type="module">
+		import {SimpleContextMenu} from "simple-context-menu-js";
+
+		document.getElementById('simpleContextMenu').onclick = (ev)=>{
+			const rect = ev.target.getBoundingClientRect()
+			const menu = SimpleContextMenu.Create({
+				'Option 1': (ev)=>{
+					console.log(ev)
+				},
+				'Option 2': (ev)=>{
+					console.log(ev)
+				}
+			}, rect.x , rect.y + rect.height + 5)
+			document.body.appendChild(menu)
+		}
+	</script>
+</body>
+
+</html>
